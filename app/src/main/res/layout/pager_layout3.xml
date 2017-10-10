@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/new_3"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/guide_enter"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent"
+        />
+</FrameLayout>
+

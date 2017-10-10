@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_showArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="@drawable/shape_corner"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/layout_thumbnail"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_weight="0.74"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_shelter_name"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="left"
+                    android:text="ShelterName"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#162834"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_suburb"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="this is suburb"
+                    android:textColor="#696969"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:typeface="normal" />
+
+
+                <TextView
+                    android:id="@+id/textview_open_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Open Status"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.05"
+            android:src="@drawable/ic_down_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_hideArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="1">
+    <LinearLayout
+        android:id="@+id/layout_hideArea_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_corner"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_what_content"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:text="this is content"
+                android:textColor="#939393"
+                android:textSize="14sp"
+                android:typeface="normal"
+                android:layout_weight="0.75" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_hideArea_botton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/btn_view_item_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="end"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/ic_map_button" />
+
+            <ImageButton
+                android:id="@+id/btn_show_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@null"
+                android:src="@drawable/ic_button_more" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

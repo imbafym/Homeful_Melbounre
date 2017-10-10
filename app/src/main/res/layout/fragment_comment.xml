@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background= "@drawable/bright_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17"
+            android:gravity="bottom"
+            android:text="if you have any suggestion or find some issues on the detail of any facilities,please feel free to contact us"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editText_your_name"
+                android:layout_width="255dp"
+                android:inputType="textPersonName"
+                android:layout_height="50dp"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:hint="Your Name "
+                android:layout_weight="0.16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="73dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editText_your_email"
+                android:layout_width="255dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.14"
+                android:hint="Your Email Address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:gravity="bottom"
+            android:layout_weight="1.16">
+
+            <EditText
+                android:id="@+id/edt_order_note_text"
+                android:layout_width="255dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.8"
+                android:background="@drawable/order_edt_note_bg"
+                android:gravity="top"
+                android:hint="Please write your comments"
+                android:minLines="5"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <Button
+            android:id="@+id/btn_sendemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="submit"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bright_background"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="start"
+        android:gravity="end"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Gender"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:id="@+id/button_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/ic_settings"
+            />
+
+        <ImageButton
+            android:id="@+id/button_help"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_help"
+            android:background="#0000"
+             />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:text="Quick Search"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/imageButton_shelter"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="10dp"
+            android:background="@mipmap/ic_button_shelter_large"
+            android:layout_marginStart="43dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/imageButton_food"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="10dp"
+
+            android:layout_weight="0.2"
+            android:background="@mipmap/ic_food_button_large"
+            android:layout_alignTop="@+id/imageButton_shelter"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginEnd="43dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton_drink"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="10dp"
+            android:background="@mipmap/ic_drink_button_large"
+            android:layout_marginBottom="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageButton_shelter" />
+
+        <ImageButton
+            android:id="@+id/imageButton_toilet"
+
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="10dp"
+
+            android:background="@mipmap/ic_toilet_large"
+            android:layout_alignTop="@+id/imageButton_drink"
+            android:layout_alignStart="@+id/imageButton_food" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:text="Use Bottons below to search the cloest Facilities"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
